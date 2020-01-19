@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" src>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="zyzWebSite.css" rel="stylesheet" type="text/css"/>
+    <link href="zyzWebSiteHeader.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+    <div id="mySideNav" class="sideNav">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+        <a href="#">Abount</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <div id="header" class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numertext">1/3</div>
+            <img src="file:/Users/zhangyazhou/Desktop/Learn/javaScript/webSite/image/img_fjords_wide.jpg" style="width:100%">
+            <div class="text">文本 1</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numertext">2/3</div>
+            <img src="file:/Users/zhangyazhou/Desktop/Learn/javaScript/webSite/image/img_mountains_wide.jpg" style="width:100%">
+            <div class="text">文本 2</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numertext">3/3</div>
+            <img src="file:/Users/zhangyazhou/Desktop/Learn/javaScript/webSite/image/img_nature_wide.jpg" style="width:100%">
+            <div class="text">文本 3</div>
+        </div>
+       
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <div id="main">
+            <span styleursor:po="background-color:#4caf50;font-size:30px;cinter;display:flex;" onclick="openNav()">&#9776; 更多</span>
+            <div class="tab">
+                <button class="tablinks" onclick="openType(event, 'type1')" id="defaultOpen">导航1</button>
+                <button class="tablinks" onclick="openType(event, 'type2')" id="defaultOpen">导航2</button>
+                <button class="tablinks" onclick="openType(event, 'type3')" id="defaultOpen">导航3</button>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropBtn">支持</button> 
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#Good">打赏</a>
+                    <a href="#Share">分享</a>
+                    <a href="#Report">举报</a>
+                </div>
+            </div>
+        <div id="type1" class="tabcontent">
+            <h3>javascript技术博客</h3>
+            <p>javascript实战演练</p>
+        </div>
+        <div id="type2" class="tabcontent">
+            <h3>React技术博客</h3>
+            <p>react实战演练</p>
+        </div>
+        <div id="type3" class="tabcontent">
+            <h3>VUE技术博客</h3>
+            <p>vue实战演练</p>
+        </div>
+       
+        
+    </div>
+
+    <script type="text/javascript" src="zyzWebSite.js"></script>
+</body>
+</html>
