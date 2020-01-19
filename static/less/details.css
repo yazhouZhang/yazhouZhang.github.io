@@ -1,0 +1,21 @@
+.article-div {
+  width: 100%;
+  min-height: 40em;
+  margin-left: 2em;
+  padding: 2em;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+.article-div-shadow {
+  box-shadow: 0px 0px 5px #a6a6a6;
+}
+#markdown-article-show {
+  border: none;
+  background-color: #FFFFFF !important;
+}
+#markdown-article-show .v-note-panel .v-note-show .v-show-content {
+  background-color: #ffffff !important;
+}
+#markdown-article-show .shadow {
+  box-shadow: none !important;
+}

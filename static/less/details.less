@@ -1,0 +1,28 @@
+@import "variable.less";
+.article-div {
+    width: 80%;
+    min-height: 40em;
+    margin-left: 2em;
+    padding: 2em;
+    margin: auto;
+    background-color: @g-div-back;
+    text-align: left;
+}
+
+.article-div-shadow {
+    box-shadow: 0px 0px 5px #a6a6a6;
+}
+
+#markdown-article-show {
+    border: none;
+    background-color: @g-div-back !important;
+}
+
+// mavon-editor样式重写 暂未寻找到更简洁的方法
+#markdown-article-show .v-note-panel .v-note-show .v-show-content {
+    background-color: #ffffff !important;
+}
+
+#markdown-article-show .shadow {
+    box-shadow: none !important;
+}
