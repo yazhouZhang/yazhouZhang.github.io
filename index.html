@@ -1,76 +1,734 @@
 <!DOCTYPE html>
-<html lang="en" src>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="zyzWebSite.css" rel="stylesheet" type="text/css"/>
-    <link href="zyzWebSiteHeader.css" rel="stylesheet" type="text/css"/>
-
-</head>
-<body>
-    <div id="mySideNav" class="sideNav">
-        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-        <a href="#">Abount</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-    </div>
-    <div id="header" class="slideshow-container">
-        <div class="mySlides fade">
-            <div class="numertext">1/3</div>
-            <img src="/image/img_fjords_wide.jpg" style="width:100%">
-            <div class="text">文本 1</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numertext">2/3</div>
-            <img src="/image/img_mountains_wide.jpg" style="width:100%">
-            <div class="text">文本 2</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numertext">3/3</div>
-            <img src="/image/img_nature_wide.jpg" style="width:100%">
-            <div class="text">文本 3</div>
-        </div>
-       
-        <div style="text-align:center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-    </div>
-    <div id="main">
-            <span styleursor:po="background-color:#4caf50;font-size:30px;cinter;display:flex;" onclick="openNav()">&#9776; 更多</span>
-            <div class="tab">
-                <button class="tablinks" onclick="openType(event, 'type1')" id="defaultOpen">导航1</button>
-                <button class="tablinks" onclick="openType(event, 'type2')" id="defaultOpen">导航2</button>
-                <button class="tablinks" onclick="openType(event, 'type3')" id="defaultOpen">导航3</button>
-            </div>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropBtn">支持</button> 
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#Good">打赏</a>
-                    <a href="#Share">分享</a>
-                    <a href="#Report">举报</a>
-                </div>
-            </div>
-        <div id="type1" class="tabcontent">
-            <h3>javascript技术博客</h3>
-            <p>javascript实战演练</p>
-        </div>
-        <div id="type2" class="tabcontent">
-            <h3>React技术博客</h3>
-            <p>react实战演练</p>
-        </div>
-        <div id="type3" class="tabcontent">
-            <h3>VUE技术博客</h3>
-            <p>vue实战演练</p>
-        </div>
-       
-        
-    </div>
-
-    <script type="text/javascript" src="zyzWebSite.js"></script>
-</body>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="./css/index.css" />
+	</head>
+	<body>
+		<div id="wrap">
+			<header class="header">
+				<div class="headMain">
+					<hgroup>
+						<h1 class="logo">
+							<a href="http://www.atguigu.com">
+								<img src="img/logo.png" />
+							</a>
+						</h1>
+						<h2 class="subHead">这是一个H5 CSS3实现的全屏滚动站点</h2>
+					</hgroup>
+					<div class="audio">
+						<audio src="img/test.mp3" loop></audio>
+					</div>
+					<nav class="navs">
+						<ul class="list">
+							<li>
+								<a href="javascript:;">
+									<div class="up">
+										<img src="img/home_b.png" />
+									</div>
+									<div class="down">
+										<img src="img/home.png"  />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="up">Course</div>
+									<div class="down">Course</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="up">Works</div>
+									<div class="down">Works</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="up">About</div>
+									<div class="down">About</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="up">Team</div>
+									<div class="down">Team</div>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="arrow"></div>	
+				</div>
+			</header>
+			<section class="content">
+				<ul class="sideNav">
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="list">
+					<li class="home">
+						<section>
+							<ul class="home1">
+								<li class="active">
+									<div class="item">one layer</div>
+								</li>
+								<li>
+									<div class="item">two layer</div>
+								</li>
+								<li>
+									<div class="item">three layer</div>
+								</li>
+								<li>
+									<div class="item">four layer</div>
+								</li>
+							</ul>
+							<ul class="home2">
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</section>
+					</li>
+					<li class="course">
+						<section>
+							<header class="course1">
+								<span>ARE YOU</span><br />
+								<span>OK!</span><br />
+								<span>LEIJUN...</span>
+							</header>
+							<p class="course2">
+								Das Kundenvertrauen in unsere Kompetenz ist die notwendige Basis einer erfolgreichen Zusammenarbeit, gleichzeitig aber auch das größte Lob, das man uns entgegenbringen kann.
+								<br />
+								Diese und viele weitere große und kleine Kunden vertrauen uns seit Jahren, was uns stolz macht, und dafür sagen wir an dieser Stelle einfach mal.
+							</p>
+							<div class="course3">
+								<span class="line"></span>
+								<span class="line"></span>
+								<span class="line"></span>
+								<span class="line"></span>
+								<span class="line"></span>
+								<div class="item">
+									<div class="backFace">陈一发儿</div>
+									<div class="face"></div>
+								</div>
+								<div class="item">
+									<div class="backFace">陈一发儿</div>
+									<div class="face"></div>
+								</div>
+								<div class="item">
+									<div class="backFace">陈一发儿</div>
+									<div class="face"></div>
+								</div>
+								<div class="item">
+									<div class="backFace">陈一发儿</div>
+									<div class="face"></div>
+								</div>
+								<div class="item">
+									<div class="backFace">陈一发儿</div>
+									<div class="face"></div>
+								</div>
+								<div class="item">
+									<div class="backFace">陈一发儿</div>
+									<div class="face"></div>
+								</div>
+								<div class="item">
+									<div class="backFace">陈一发儿</div>
+									<div class="face"></div>
+								</div>
+								<div class="item">
+									<div class="backFace">陈一发儿</div>
+									<div class="face"></div>
+								</div>
+								<div class="item">
+									<div class="backFace">陈一发儿</div>
+									<div class="face"></div>
+								</div>
+								<div class="item">
+									<div class="backFace">陈一发儿</div>
+									<div class="face"></div>
+								</div>
+								<div class="item">
+									<div class="backFace">陈一发儿</div>
+									<div class="face"></div>
+								</div>
+								<div class="item">
+									<div class="backFace">陈一发儿</div>
+									<div class="face"></div>
+								</div>
+							</div>
+							<div class="plane1"></div>
+    						<div class="plane2"></div>
+    						<div class="plane3"></div>
+						</section>
+					</li>
+					<li class="works">
+						<section>
+							<header class="works1">
+								<span>EINBLICK</span><br />
+								<span>ERKENNTNIS</span><br />
+								<span>ERGEBNIS</span>
+							</header>
+							<div class="works2">
+								<div class="item">
+									<img src="img/worksimg1.jpg" />
+									<div class="mask">
+										<span>丑小鸭会变成白天鹅</span>
+										<div class="icon"></div>
+									</div>
+								</div>
+								<div class="item">
+									<img src="img/worksimg2.jpg" />
+									<div class="mask">
+										<span>听说彼得潘总长不大</span>
+										<div class="icon"></div>
+									</div>
+								</div>
+								<div class="item">
+									<img src="img/worksimg3.jpg" />
+									<div class="mask">
+										<span>杰克他有竖琴和魔法</span>
+										<div class="icon"></div>
+									</div>
+								</div>
+								<div class="item">
+									<img src="img/worksimg4.jpg" />
+									<div class="mask">
+										<span>听说森林里有糖果屋</span>
+										<div class="icon"></div>
+									</div>
+								</div>
+							</div>
+							<div class="works3"></div>
+							<div class="pencel1"></div>
+    						<div class="pencel2"></div>
+    						<div class="pencel3"></div>
+						</section>
+					</li>
+					<li class="about">
+						<section>
+							<header class="about1">
+								<span>HELLO!</span><br />
+								<span>SPIDER MAN</span><br />
+								<span>HAHAHA</span>
+							</header>
+							<p class="about2">Der bunte Medienmix ist die Faszination die uns antreibt und das, was man an uns schätzt. Von A bis Z und von vorne bis hinten nehmen wir Ihr Projekt unter unsere Fittiche und lassen es zu etwas Großartigem heranwachsen.</p>
+							<div class="about3"></div>
+							<div class="about4">
+								<div class="item">
+									<span></span>
+									<ul>
+										<li><img src="img/about1.jpg" /></li>
+										<li><img src="img/about1.jpg" /></li>
+										<li><img src="img/about1.jpg" /></li>
+										<li><img src="img/about1.jpg" /></li>
+									</ul>
+								</div>
+								<div class="item">
+									<span></span>
+									<ul>
+										<li><img src="img/about3.jpg" /></li>
+										<li><img src="img/about3.jpg" /></li>
+										<li><img src="img/about3.jpg" /></li>
+										<li><img src="img/about3.jpg" /></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</li>
+					<li class="team">
+						<section>
+							<header class="team1">
+								<span>WIR SIND</span>
+								<span>VOXELAIR</span>
+							</header>
+							<p class="team2">
+								Wir sind seit 2002 eine Full-Service-Werbeagentur mit Stammsitz in Heimsheim, zwischen Stuttgart und Karlsruhe. 
+								<br />
+								Über 60 Jahre Erfahrung vereinen das gesamte VoxelAir-Team. Dabei hat jedes Voxel neben professionellem Allroundwissen auch sein ganz spezielles Gebiet, um selbst die individuellsten Kundenwünsche schnell und kompetent umzusetzen.
+							</p>
+							<div class="team3">
+								<ul>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</section>
+					</li>
+				</ul>
+			</section>
+			<section class="mask">
+				<div class="top"></div>
+				<div class="bottom"></div>
+				<div class="line"></div>
+			</section>
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload = function(){
+			var navs = document.querySelector("#wrap .header .navs");
+			var liNodes = navs.querySelectorAll(".list > li");
+			var upNodes = navs.querySelectorAll(".list > li  .up");
+			var firstUp = upNodes[0];
+			var firstLi = liNodes[0];
+			var arrow = document.querySelector('.arrow');
+			var header = document.querySelector("#wrap .header");
+			var content = document.querySelector("#wrap .content");
+			var clist = document.querySelector('.content .list')
+			var cLiNodes = document.querySelectorAll("#wrap .content .list > li");
+			//querySelectorAll拿的是静态列表
+			var home2lis = document.querySelectorAll("#wrap .content .home .home2 > li");
+			var home1lis = document.querySelectorAll("#wrap .content .home .home1 > li");
+			var home = document.querySelector("#wrap .content .home");
+			
+			var team3 = document.querySelector("#wrap .content .team .team3");
+			var teamList = document.querySelectorAll("#wrap .content .team .team3 ul > li");
+			
+			//侧边导航
+			var sideLis = document.querySelectorAll("#wrap .content .sideNav > li");
+			//音频
+			var audioW = document.querySelector("#wrap .header .headMain .audio");
+			var audio = document.querySelector("#wrap .header .headMain .audio audio");
+			
+			var mask = document.querySelector('#wrap>.mask');
+			var divTop = document.querySelector('#wrap .mask .top');
+			var divBottom = document.querySelector('#wrap .mask .bottom');
+			var line = document.querySelector('#wrap .mask .line');
+			
+			var nowIndex = 0
+			var timer = null
+			var oldIndex =0
+			
+			//开机动画
+			loading();
+			function loading(){
+				var flag = 0;
+				var arr = ['bg1.jpg','bg2.jpg','bg3.jpg','bg4.jpg','bg5.jpg','about1.jpg','about2.jpg','about3.jpg','about4.jpg','worksimg1.jpg','worksimg2.jpg','worksimg3.jpg','worksimg4.jpg','team.png','greenLine.png'];
+				for(var i=0;i<arr.length;i++){
+					var img = new Image();
+					img.src = 'img/'+arr[i];
+					img.onload = function(){
+						flag++;
+						line.style.width = (flag/arr.length)*100+'%';
+					}
+				}
+				
+				line.addEventListener('transitionend',function(){
+					if(flag === arr.length){
+						divTop.style.height = 0;
+						divBottom.style.height = 0;
+						this.style.opacity = 0;
+					}
+				})
+				divTop.addEventListener('transitionend',function(){
+					mask.remove();
+					music();
+					audioW.onclick();
+					outInAn[0]['in']();
+					home3D();
+					canvasAn();
+				})
+			}
+			
+			//出入场动画
+			var preIndex = 0
+			var outInAn=[
+				{
+					out:function(){
+						var home2 = document.querySelector("#wrap .content .home .home2");
+						var home1= document.querySelector("#wrap .content .home .home1");
+						home1.style.transform="translateY(-200px)";
+						home2.style.transform="translateY(200px)";
+						home1.style.opacity=0;
+						home2.style.opacity=0;
+					},
+					in:function(){
+						var home2 = document.querySelector("#wrap .content .home .home2");
+						var home1= document.querySelector("#wrap .content .home .home1");
+						home1.style.transform="translateY(0)";
+						home2.style.transform="translateY(0)";
+						home1.style.opacity=1;
+						home2.style.opacity=1;
+					}
+				},
+				{
+					out:function(){
+						var p1 = document.querySelector("#wrap .content .course .plane1");
+						var p2 = document.querySelector("#wrap .content .course .plane2");
+						var p3 = document.querySelector("#wrap .content .course .plane3");
+						p1.style.transform= "translateY(-200px)";
+						p2.style.transform= "translateY(200px)";
+						p3.style.transform= "translateY(200px)";
+					},
+					in:function(){
+						var p1 = document.querySelector("#wrap .content .course .plane1");
+						var p2 = document.querySelector("#wrap .content .course .plane2");
+						var p3 = document.querySelector("#wrap .content .course .plane3");
+						p1.style.transform= "translateY(0)";
+						p2.style.transform= "translateY(0)";
+						p3.style.transform= "translateY(0)";
+					}
+				},
+				{
+					out:function(){
+						var p1 = document.querySelector("#wrap .content .works .pencel1");
+						var p2 = document.querySelector("#wrap .content .works .pencel2");
+						var p3 = document.querySelector("#wrap .content .works .pencel3");
+						p1.style.transform= "translateY(-200px)";
+						p2.style.transform= "translateY(200px)";
+						p3.style.transform= "translateY(-200px)";
+					},
+					in:function(){
+						var p1 = document.querySelector("#wrap .content .works .pencel1");
+						var p2 = document.querySelector("#wrap .content .works .pencel2");
+						var p3 = document.querySelector("#wrap .content .works .pencel3");
+						p1.style.transform= "translateY(0)";
+						p2.style.transform= "translateY(0)";
+						p3.style.transform= "translateY(0)";
+					}
+				},
+				{
+					out:function(){
+						var pic1 = document.querySelectorAll("#wrap .content .about .about4 .item")[0];
+						var pic2 = document.querySelectorAll("#wrap .content .about .about4 .item")[1];
+						pic1.style.transform="rotate(45deg)";
+						pic2.style.transform="rotate(-45deg)";
+					},
+					in:function(){
+						var pic1 = document.querySelectorAll("#wrap .content .about .about4 .item")[0];
+						var pic2 = document.querySelectorAll("#wrap .content .about .about4 .item")[1];
+						pic1.style.transform="rotate(0)";
+						pic2.style.transform="rotate(0)";
+					}
+				},
+				{
+					out:function(){
+						var team1 = document.querySelector("#wrap .content .team .team1");
+						var team2 = document.querySelector("#wrap .content .team .team2");
+						team1.style.transform="translateX(-200px)";
+						team2.style.transform="translateX(200px)";
+					},
+					in:function(){
+						var team1 = document.querySelector("#wrap .content .team .team1");
+						var team2 = document.querySelector("#wrap .content .team .team2");
+						team1.style.transform="translateX(0)";
+						team2.style.transform="translateX(0)";
+					}
+				}
+			]
+			//首先让所有屏都出场(不然第一次入场的时候会没有效果)
+			for(var i=0;i<outInAn.length;i++){
+				outInAn[i]['out']();
+			}
+			
+			
+			window.onresize = function(){
+				contentBind()
+				arrow.style.left = liNodes[nowIndex].offsetLeft+liNodes[nowIndex].offsetWidth/2-arrow.offsetWidth/2+'px';
+				clist.style.top = -nowIndex*(document.documentElement.clientHeight-header.offsetHeight)+'px';
+			}
+			
+			headBind()
+			function headBind(){
+				//初始化的状态
+				arrow.style.left = firstLi.offsetLeft+firstLi.offsetWidth/2-arrow.offsetWidth/2+'px';
+				firstUp.style.width = '100%'
+				//有问题
+				/*for(var i=0;i<liNodes.length;i++){
+					var liNode = liNodes[i];
+					liNode.onclick = function(){
+						move(i)
+						nowIndex = i
+					}
+				}*/
+				//保存下标
+				/*for(var i=0;i<liNodes.length;i++){
+					liNodes[i].index = i
+					liNodes[i].onclick = function(){
+						move(this.index)
+						nowIndex = this.index
+					}
+				}*/
+				//es6 let
+				/*for(let i=0;i<liNodes.length;i++){
+					let liNode = liNodes[i];
+					liNode.onclick = function(){
+						move(i)
+						nowIndex = i
+					}
+				}*/
+				//iife 利用闭包
+				for(var i=0;i<liNodes.length;i++){
+					var liNode = liNodes[i];
+					var sideLiNode = sideLis[i];
+					(function(i){
+						//可以连写
+						sideLiNode.onclick = liNode.onclick = function(){
+							move(i)
+							nowIndex = i
+						}
+					})(i)
+				}
+			}
+			
+			//字体颜色的改变--arrow的移动--点击换屏
+//			move(4)
+			function move(index){
+				if(index === preIndex){
+					return;
+				}
+				//侧边导航的同步
+				//同步主导航的状态
+				for (var i = 0; i < upNodes.length; i++) {
+					upNodes[i].style.width = ''
+					sideLis[i].className = ''
+				}
+				upNodes[index].style.width = '100%'
+				sideLis[index].className = 'active'
+				//箭头状态的同步
+				arrow.style.left = liNodes[index].offsetLeft+liNodes[index].offsetWidth/2-arrow.offsetWidth/2+'px';
+				//主体内容的同步
+				clist.style.top = -index*(document.documentElement.clientHeight-header.offsetHeight)+'px';
+				
+				//当前屏入场
+				outInAn[index]['in']();
+				//上一屏出场
+				outInAn[preIndex]['out']();
+				
+				preIndex = index;
+			}
+			
+			contentBind();
+			function contentBind(){
+				content.style.height = document.documentElement.clientHeight - header.offsetHeight+"px";
+				for(var i=0;i<cLiNodes.length;i++){
+					cLiNodes[i].style.height = document.documentElement.clientHeight - header.offsetHeight+"px";
+				}
+			}
+			
+			//滚轮事件兼容处理(滚动换屏)
+			content.onmousewheel = fn //非火狐
+			if(content.addEventListener){
+				content.addEventListener('DOMMouseScroll',fn)//火狐
+			}
+			
+			function fn(ev){
+				ev = ev||event
+				clearTimeout(timer)
+				//防止多次触发滚轮事件
+				//定时器回调里不能传ev(此处也没必要传，都看得到，形参传递不是一层层传的，而是调用的时候传递，首先是在事件回调里注入event)
+				timer = setTimeout(function(){
+					var flag = ''
+				
+					if(ev.wheelDelta){
+						flag = ev.wheelDelta>0?'up':'down'
+					}else if(ev.detail){
+						flag = ev.detail<0?'up':'down'
+					}
+					
+					switch (flag){
+						case 'up':
+							if(nowIndex>0){
+								nowIndex--
+								move(nowIndex)
+							}
+							break
+						case 'down':
+							if(nowIndex<cLiNodes.length-1){
+								nowIndex++
+								move(nowIndex)
+							}
+							break
+					}
+					//dom2
+					if(ev.preventDefault){
+						ev.preventDefault()
+					}
+					//dom0
+					return false
+				},200)
+			}
+			
+			//首屏3D
+			function home3D(){
+				var autoFlag = 0;
+				var timerAuto = null;
+				for (var i = 0; i < home2lis.length; i++) {
+					home2lis[i].index = i;
+					home2lis[i].onclick = function(){
+						clearInterval(timerAuto);
+						
+						for (var i = 0; i < home2lis.length; i++) {
+							home2lis[i].className = ''
+						}
+						this.className = 'active'
+						
+						//点击小圆点执行3d动画
+						if(this.index>oldIndex){
+							//往右点
+							//右边显示(rightShow)  左边隐藏(leftHide)
+							home1lis[this.index].className = 'rightShow'
+							home1lis[oldIndex].className = 'leftHide'
+						}else if(this.index<oldIndex){
+							home1lis[this.index].className = 'leftShow'
+							home1lis[oldIndex].className = 'rightHide'
+						}
+						//oldIndex变为上次点击的index
+						oldIndex = this.index;
+						//从点击处开始轮播
+						autoFlag = this.index;
+						
+						moveAuto();
+					}
+				}
+				
+				//3D自动轮播效果
+				moveAuto();
+				function moveAuto(){
+					timerAuto = setInterval(function(){
+						autoFlag++;
+						
+						if(autoFlag === home2lis.length){
+							autoFlag = 0;
+						}
+						for (var i = 0; i < home2lis.length; i++) {
+							home2lis[i].className = '';
+						}
+						home2lis[autoFlag].className = 'active';
+						home1lis[autoFlag].className = 'rightShow';
+						home1lis[oldIndex].className = 'leftHide';
+						
+						oldIndex = autoFlag;
+					},3000)
+					
+					home.onmouseenter = function(){
+						clearInterval(timerAuto);
+					}
+				}
+			}
+			
+			//team屏气泡效果
+			function canvasAn(){
+				var oc = null
+				var timer1 = null
+				var timer2 = null
+				
+				for (var i = 0; i < teamList.length; i++) {
+					teamList[i].onmouseenter = function(){
+						for (var i = 0; i < teamList.length; i++) {
+							teamList[i].style.opacity = .5;
+						}
+						this.style.opacity = 1;
+						addCanvas();
+						oc.style.left = this.offsetLeft+'px';
+						oc.style.top = this.offsetTop+'px';
+						bubble(oc);
+					}
+				}
+				
+				team3.onmouseleave = function(){
+					for (var i = 0; i < teamList.length; i++) {
+						teamList[i].style.opacity = 1;
+					}
+					removeCanvas();
+				}
+				
+				function removeCanvas(){
+					clearInterval(timer1);
+					clearInterval(timer2);
+					oc.remove();
+					oc = null
+				}
+				
+				function addCanvas(){
+					if(!oc){
+						oc = document.createElement('canvas')
+						oc.style.position = 'absolute'
+						//canvas元素本身上就有width，height属性，不需要style，可读写（不带单位）
+						oc.width = teamList[0].offsetWidth;
+						oc.height = teamList[0].offsetHeight*0.7;
+						team3.appendChild(oc);
+					}
+				}
+			
+			
+				function bubble(oc){
+					clearInterval(timer1);
+					clearInterval(timer2);
+					
+					if(oc.getContext){
+						var ctx = oc.getContext('2d')
+						
+						//容器  管理圆的必要信息
+						var arr = []
+						
+						//创建圆的信息
+						timer1 = setInterval(function(){
+							//半径  圆心
+							var r = Math.random()*8+2
+							var x = Math.round(Math.random()*oc.width)
+							var y = oc.height - r
+							//rgba信息
+							var red = Math.round(Math.random()*255)
+							var green = Math.round(Math.random()*255)
+							var blue = Math.round(Math.random()*255)
+							var a = 1
+							
+							//曲线运动
+							var deg =0;
+							var startX = x;
+							var startY = y;
+							var step = Math.random()*100+20;
+							
+							arr.push({x,y,r,red,green,blue,a,deg,startX,startY,step})
+						},200)
+						
+						timer2 = setInterval(function(){
+//							console.log(arr)
+							ctx.clearRect(0,0,oc.width,oc.height)
+							//实现半径和透明度的平滑过渡
+							for(var i=0;i<arr.length;i++){
+								arr[i].deg+=5;
+								arr[i].x = arr[i].startX + Math.sin(arr[i].deg*Math.PI/180)*arr[i].step*0.6;
+								arr[i].y = arr[i].startY - (arr[i].deg*Math.PI/180)*arr[i].step/2;
+								//不能让数组里的个数一直增加
+								if(arr[i].y<=40){
+									arr.splice(i,1)
+								}
+							}
+							//画圆
+							for(var i=0;i<arr.length;i++){
+								ctx.fillStyle = 'rgba('+arr[i].red+','+arr[i].green+','+arr[i].blue+','+arr[i].a+')'
+								ctx.beginPath()
+								ctx.arc(arr[i].x,arr[i].y,arr[i].r,0,2*Math.PI)
+								ctx.fill()
+							}
+						},30)
+					}
+				}
+			}
+			
+			function music(){
+				audioW.onclick = function(){
+					if(audio.paused){
+						audio.play();
+						audioW.style.background="url(img/musicon.gif) no-repeat";
+					}else{
+						audio.pause();
+						audioW.style.background="url(img/musicoff.gif) no-repeat";
+					}
+				}
+			}
+		}
+	</script>
 </html>

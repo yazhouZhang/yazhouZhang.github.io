@@ -1,0 +1,7 @@
+.maskHalf {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: lightcoral;
+  transition: 1s height;
+}
