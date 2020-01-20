@@ -11,11 +11,11 @@
 				<div class="headMain">
 					<hgroup>
 						<h1 class="logo">
-							<a href="http://www.atguigu.com">
-								<img src="img/logo.png" />
+							<a href="https://github.com/yazhouZhang">
+								<img src="img/logo_asiaZhang.jpeg" />
 							</a>
 						</h1>
-						<h2 class="subHead">这是一个H5 CSS3实现的全屏滚动站点</h2>
+						<h2 class="subHead">AsiaZhang 个人网站</h2>
 					</hgroup>
 					<div class="audio">
 						<audio src="img/test.mp3" loop></audio>
@@ -34,20 +34,20 @@
 							</li>
 							<li>
 								<a href="javascript:;">
-									<div class="up">Course</div>
-									<div class="down">Course</div>
+									<div class="up">案例作品</div>
+									<div class="down">案例作品</div>
 								</a>
 							</li>
 							<li>
 								<a href="javascript:;">
-									<div class="up">Works</div>
-									<div class="down">Works</div>
+									<div class="up">业务范围</div>
+									<div class="down">业务范围</div>
 								</a>
 							</li>
 							<li>
 								<a href="javascript:;">
-									<div class="up">About</div>
-									<div class="down">About</div>
+									<div class="up">介绍</div>
+									<div class="down">介绍</div>
 								</a>
 							</li>
 							<li>
@@ -106,59 +106,66 @@
 								<br />
 								Diese und viele weitere große und kleine Kunden vertrauen uns seit Jahren, was uns stolz macht, und dafür sagen wir an dieser Stelle einfach mal.
 							</p>
-							<div class="course3">
+							<div class="course3" id="course3Id">
 								<span class="line"></span>
 								<span class="line"></span>
 								<span class="line"></span>
 								<span class="line"></span>
 								<span class="line"></span>
 								<div class="item">
-									<div class="backFace">陈一发儿</div>
-									<div class="face"></div>
+									<div class="backFace">2345贷款王
+										<br />千万量级用户的iOS App。
+									</div>
+									<div class="face face1"></div>
+								</div>
+								<div class="item">
+									<div class="backFace">智富ERP
+										<br />企业级ERP App，支持身份证信息读取，OCR识别，语音识别。</div>
+									<div class="face face2"></div>
+								</div>
+								<div class="item">
+									<div class="backFace">付费通App
+										<br />三方支付类App，水电燃气，房产税，物业费等缴纳。</div>
+									<div class="face face3"></div>
+								</div>
+								<div class="item">
+									<div class="backFace">智慧汽车网
+										<br />汽车后市场App，违章代缴，9折加油，二手车等业务。</div>
+									<div class="face face4"></div>
+								</div>
+								<div class="item">
+									<div class="backFace">智富360
+										<br />汽车金融类App，提供理财产品，债权，积分兑换等业务。</div>
+									<div class="face face5"></div>
+								</div>
+								<div class="item">
+									<div class="backFace">付费通POS
+										<br />收单服务号，支持OCR，企业四要素验证，拥有资金结算，商户进件等业务。</div>
+									<div class="face face6"></div>
 								</div>
 								<div class="item">
 									<div class="backFace">陈一发儿</div>
-									<div class="face"></div>
+									<div class="face face7"></div>
 								</div>
 								<div class="item">
 									<div class="backFace">陈一发儿</div>
-									<div class="face"></div>
+									<div class="face face8"></div>
 								</div>
 								<div class="item">
 									<div class="backFace">陈一发儿</div>
-									<div class="face"></div>
+									<div class="face face9"></div>
 								</div>
 								<div class="item">
 									<div class="backFace">陈一发儿</div>
-									<div class="face"></div>
+									<div class="face face10"></div>
 								</div>
 								<div class="item">
 									<div class="backFace">陈一发儿</div>
-									<div class="face"></div>
+									<div class="face face11"></div>
 								</div>
 								<div class="item">
 									<div class="backFace">陈一发儿</div>
-									<div class="face"></div>
-								</div>
-								<div class="item">
-									<div class="backFace">陈一发儿</div>
-									<div class="face"></div>
-								</div>
-								<div class="item">
-									<div class="backFace">陈一发儿</div>
-									<div class="face"></div>
-								</div>
-								<div class="item">
-									<div class="backFace">陈一发儿</div>
-									<div class="face"></div>
-								</div>
-								<div class="item">
-									<div class="backFace">陈一发儿</div>
-									<div class="face"></div>
-								</div>
-								<div class="item">
-									<div class="backFace">陈一发儿</div>
-									<div class="face"></div>
+									<div class="face face12"></div>
 								</div>
 							</div>
 							<div class="plane1"></div>
@@ -304,6 +311,21 @@
 			var divTop = document.querySelector('#wrap .mask .top');
 			var divBottom = document.querySelector('#wrap .mask .bottom');
 			var line = document.querySelector('#wrap .mask .line');
+			
+			// let course3 = document.getElementById('course3Id');
+			// let dataArr = [
+			// 	{iconUrl:'app-icon1.png',backName:'2345',linkUrl:''},{iconUrl:'app-icon2.png',backName:'2345',linkUrl:''},{iconUrl:'app-icon3.png',backName:'2345',linkUrl:''},{iconUrl:'app-icon4.png',backName:'2345',linkUrl:''},
+			// 	{iconUrl:'app-icon1.png',backName:'2345',linkUrl:''},{iconUrl:'app-icon2.png',backName:'2345',linkUrl:''},{iconUrl:'app-icon3.png',backName:'2345',linkUrl:''},{iconUrl:'app-icon4.png',backName:'2345',linkUrl:''},
+			// 	{iconUrl:'app-icon1.png',backName:'2345',linkUrl:''},{iconUrl:'app-icon2.png',backName:'2345',linkUrl:''},{iconUrl:'app-icon3.png',backName:'2345',linkUrl:''},{iconUrl:'app-icon4.png',backName:'2345',linkUrl:''},
+			// ];
+			// for(var i = 0; i < dataArr.length; i++){
+			// 	if(i%3 == 0){
+			// 		var span = document.createElement("span");  
+			// 		span.className = "line" 
+			// 		course3.appendChild(span)
+			// 	}
+			// 	course3.innerHTML = "<div class='item'>\n<div class='backFace'>陈一发儿</div>\n<div class='face' style='background:url(../img/app-icon" + i + '.png' +  "'></div>\n</div>"
+			// }
 			
 			var nowIndex = 0
 			var timer = null

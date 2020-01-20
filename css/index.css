@@ -317,11 +317,11 @@ img {
   z-index: 3;
   right: 50px;
   top: 70px;
-  width: 480px;
+  width:528px;
 }
 #wrap .content .list .course section .course3 .item {
   float: left;
-  width: 120px;
+  width: 132px;
   height: 132px;
   transform-style: preserve-3d;
   perspective: 300px;
@@ -340,10 +340,45 @@ img {
   bottom: 0;
   margin: auto;
   margin: 0;
-  background: url(../img/leonberg.png) no-repeat;
   background-position: center;
   backface-visibility: hidden;
   transition: 1.5s transform;
+}
+#wrap .content .list .course section .course3 .item .face1 {
+  background: url(../img/app-icon1.png) no-repeat;
+}
+#wrap .content .list .course section .course3 .item .face2 {
+  background: url(../img/app-icon2.png) no-repeat;
+}
+#wrap .content .list .course section .course3 .item .face3 {
+  background: url(../img/app-icon5.png) no-repeat;
+}
+#wrap .content .list .course section .course3 .item .face4 {
+  background: url(../img/app-icon3.png) no-repeat;
+}
+#wrap .content .list .course section .course3 .item .face5 {
+  background: url(../img/app-icon4.png) no-repeat;
+}
+#wrap .content .list .course section .course3 .item .face6 {
+  background: url(../img/app-icon6.jpeg) no-repeat;
+}
+#wrap .content .list .course section .course3 .item .face7 {
+  background: url(../img/app-icon3.png) no-repeat;
+}
+#wrap .content .list .course section .course3 .item .face8 {
+  background: url(../img/app-icon4.png) no-repeat;
+}
+#wrap .content .list .course section .course3 .item .face9 {
+  background: url(../img/app-icon1.png) no-repeat;
+}
+#wrap .content .list .course section .course3 .item .face10 {
+  background: url(../img/app-icon2.png) no-repeat;
+}
+#wrap .content .list .course section .course3 .item .face11 {
+  background: url(../img/app-icon3.png) no-repeat;
+}
+#wrap .content .list .course section .course3 .item .face12 {
+  background: url(../img/app-icon4.png) no-repeat;
 }
 #wrap .content .list .course section .course3 .item .backFace {
   position: absolute;
@@ -369,16 +404,16 @@ img {
   background: url(../img/plus_row.png) no-repeat;
 }
 #wrap .content .list .course section .course3 .line:nth-child(2) {
-  left: 115px;
+  left: 127px;
 }
 #wrap .content .list .course section .course3 .line:nth-child(3) {
-  left: 235px;
+  left: 259px;
 }
 #wrap .content .list .course section .course3 .line:nth-child(4) {
-  left: 355px;
+  left: 391px;
 }
 #wrap .content .list .course section .course3 .line:nth-child(5) {
-  left: 475px;
+  left: 523px;
 }
 #wrap .content .list .course section .plane1 {
   width: 359px;
