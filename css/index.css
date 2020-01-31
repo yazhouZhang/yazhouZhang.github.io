@@ -758,22 +758,23 @@ img {
   transition: 1s transform ;
 }
 #wrap .content .list .team section .team3 {
-  width: 944px;
+  width: 1021px;
   height: 448px;
   position: absolute;
-  left: 50%;
+  /* left: 50%; */
   bottom: -30%;
-  margin-left: -472px;
+  /* margin-left: -400px; */
 }
 #wrap .content .list .team section .team3 ul {
   height: 100%;
+  background: url(../img/team.png) no-repeat;
 }
 #wrap .content .list .team section .team3 ul li {
   float: left;
-  width: 118px;
+  width: 204px;
   height: 100%;
   cursor: pointer;
-  background: url(../img/team.png) no-repeat;
+  /* background: url(../img/team.png) no-repeat; */
 }
 #wrap .content .list .team section .team3 ul li:nth-of-type(1) {
   background-position: 0 0 ;

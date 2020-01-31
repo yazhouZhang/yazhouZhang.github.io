@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   height: 100%;
   overflow: hidden;
@@ -719,12 +719,12 @@ img {
   transition: 1s transform ;
 }
 #wrap .content .list .team section .team3 {
-  width: 944px;
+  width: 1021px;
   height: 448px;
   position: absolute;
   left: 50%;
   bottom: -30%;
-  margin-left: -472px;
+  margin-left: -400px;
 }
 #wrap .content .list .team section .team3 ul {
   height: 100%;
@@ -795,4 +795,4 @@ img {
   background: #fff;
   margin-top: -2px;
   transition: 1s width;
-}
+} */
