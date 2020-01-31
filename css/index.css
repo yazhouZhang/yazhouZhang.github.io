@@ -214,16 +214,20 @@ img {
   visibility: visible;
 }
 #wrap .content .list .home section .home1 li:nth-child(1) {
-  background: #dc6c5f;
+  /* background: #dc6c5f; */
+  background: url(../img/banner1.jpeg) no-repeat;
 }
 #wrap .content .list .home section .home1 li:nth-child(2) {
-  background: #95dc84;
+  /* background: #95dc84; */
+  background: url(../img/banner2.jpeg) no-repeat;
 }
 #wrap .content .list .home section .home1 li:nth-child(3) {
-  background: #64b9d2;
+  /* background: #64b9d2; */
+  background: url(../img/banner3.jpeg) no-repeat;
 }
 #wrap .content .list .home section .home1 li:nth-child(4) {
-  background: #000000;
+  /* background: #000000; */
+  background: url(../img/banner4.png) no-repeat;
 }
 #wrap .content .list .home section .home1 li.leftHide {
   animation: lh 1s linear;
@@ -363,22 +367,22 @@ img {
   background: url(../img/app-icon6.jpeg) no-repeat;
 }
 #wrap .content .list .course section .course3 .item .face7 {
-  background: url(../img/app-icon7.png) no-repeat;
+  background: url(../img/app-icon9.png) no-repeat;
 }
 #wrap .content .list .course section .course3 .item .face8 {
   background: url(../img/app-icon8.png) no-repeat;
 }
 #wrap .content .list .course section .course3 .item .face9 {
-  background: url(../img/app-icon1.png) no-repeat;
+  background: url(../img/pc-icon1.jpeg) no-repeat;
 }
 #wrap .content .list .course section .course3 .item .face10 {
-  background: url(../img/app-icon2.png) no-repeat;
+  background: url(../img/app-icon7.png) no-repeat;
 }
 #wrap .content .list .course section .course3 .item .face11 {
-  background: url(../img/app-icon3.png) no-repeat;
+  background: url(../img/app-icon10.jpeg) no-repeat;
 }
 #wrap .content .list .course section .course3 .item .face12 {
-  background: url(../img/app-icon4.png) no-repeat;
+  background: url(../img/app-icon11.jpeg) no-repeat;
 }
 #wrap .content .list .course section .course3 .item .backFace {
   position: absolute;
